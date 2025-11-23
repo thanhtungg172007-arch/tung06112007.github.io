@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookZone - Mua sách online</title>
+  <link rel="stylesheet" href="bansach.css">
+
+  <header>
+    <div class="logo">📚 BookZone</div>
+    <nav>
+      <a href="bansach.html" class="active">Trang chủ</a>
+      <a href="giohang.html">Giỏ hàng</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Chào mừng đến với BookZone</h1>
+    <p>Kho sách tri thức dành cho mọi người.</p>
+  </section>
+
+  <!-- Bộ lọc thể loại -->
+  <section class="filter">
+    <label for="category">Chọn thể loại: </label>
+    <select id="category">
+      <option value="all">Tất cả</option>
+      <option value="tieu-thuyet">Tiểu thuyết</option>
+      <option value="truyen-tranh">Truyện tranh</option>
+      <option value="hoc-tap">Học tập</option>
+      <option value="cong-nghe">Công nghệ</option>
+      <option value="doi-song">Đời sống</option>
+    </select>
+  </section>
+
+  <section class="product-section">
+    <h2>Sách nổi bật</h2>
+    <div class="product-list">
+
+      <!-- ===== TIỂU THUYẾT ===== -->
+      <div class="product-card tieu-thuyet">
+        <img src="nhà giả kim.webp" alt="Nhà Giả Kim">
+        <h3>Nhà Giả Kim</h3>
+        <p class="price">68.000₫</p>
+        <button class="btn add-to-cart" data-name="Nhà Giả Kim" data-price="68000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card tieu-thuyet">
+        <img src="đừng lựa chọn an nhàn khi còn trẻ.jpg" alt="Đừng lựa chọn an nhàn khi còn trẻ">
+        <h3>Đừng Lựa Chọn Để Đầu Hàng</h3>
+        <p class="price">72.000₫</p>
+        <button class="btn add-to-cart" data-name="Đừng Lựa Chọn an nhàn khi còn trẻ" data-price="72000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card tieu-thuyet">
+        <img src="trẻ đáng giá bao nhiêu.webp" alt="Tuổi Trẻ Đáng Giá Bao Nhiêu">
+        <h3>Tuổi Trẻ Đáng Giá Bao Nhiêu</h3>
+        <p class="price">85.000₫</p>
+        <button class="btn add-to-cart" data-name="Tuổi Trẻ Đáng Giá Bao Nhiêu" data-price="85000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card tieu-thuyet">
+        <img src="Biển của mỗi người.jpg" alt="Biển Của mỗi người">
+        <h3>Biển Của Kẻ Khác</h3>
+        <p class="price">89.000₫</p>
+        <button class="btn add-to-cart" data-name="Biển Của mỗi người" data-price="89000">Thêm vào giỏ</button>
+      </div>
+
+      <!-- ===== TRUYỆN TRANH ===== -->
+      <div class="product-card truyen-tranh">
+        <img src="demo slayer.webp" alt="Demon Slayer Tập 1">
+        <h3>Demon Slayer Tập 1</h3>
+        <p class="price">38.000₫</p>
+        <button class="btn add-to-cart" data-name="Demon Slayer Tập 1" data-price="38000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card truyen-tranh">
+        <img src="One Piece.jpg" alt="One Piece Tập 101">
+        <h3>One Piece Tập 101</h3>
+        <p class="price">35.000₫</p>
+        <button class="btn add-to-cart" data-name="One Piece Tập 101" data-price="35000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card truyen-tranh">
+        <img src="conan.jpg" alt="Conan Tập 100">
+        <h3>Conan Tập 100</h3>
+        <p class="price">42.000₫</p>
+        <button class="btn add-to-cart" data-name="Conan Tập 100" data-price="42000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card truyen-tranh">
+        <img src="attack on titan.webp" alt="Attack On Titan Tập 33">
+        <h3>Attack On Titan Tập 33</h3>
+        <p class="price">39.000₫</p>
+        <button class="btn add-to-cart" data-name="Attack On Titan Tập 33" data-price="39000">Thêm vào giỏ</button>
+      </div>
+
+      <!-- ===== HỌC TẬP ===== -->
+      <div class="product-card hoc-tap">
+        <img src="bài tập toán 12.jpg" alt="Vở Bài Tập Toán 12">
+        <h3>Vở Bài Tập Toán 12</h3>
+        <p class="price">49.000₫</p>
+        <button class="btn add-to-cart" data-name="Vở Bài Tập Toán 12" data-price="49000">Thêm vào giỏ</button>
+      </div>
+      <div class="product-card hoc-tap">
+        <img src="đề ôn luyện THPTQG.jpg" alt="Đề Ôn Luyện THPTQG Môn Văn">
+        <h3>Đề Ôn Luyện THPTQG Môn Văn</h3>
+        <p class="price">65.000₫</p>
+        <button class="btn add-to-cart" data-name="Đề Ôn Luyện THPTQG Môn Văn" data-price="65000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card hoc-tap">
+        <img src="giải tích 12..jpg" alt="Giải Tích 12">
+        <h3>Giải Tích 12</h3>
+        <p class="price">52.000₫</p>
+        <button class="btn add-to-cart" data-name="Giải Tích 12" data-price="52000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card hoc-tap">
+        <img src="50 đề minh họa.jpg" alt="Ngữ Văn 11">
+        <h3>50 đề minh họa TỐT NGHIỆP THPT 2025</h3>
+        <p class="price">47.000₫</p>
+        <button class="btn add-to-cart" data-name="50 đề minh học TỐT NGHIỆP THPT 2025" data-price="47000">Thêm vào giỏ</button>
+      </div>
+
+      <!-- ===== CÔNG NGHỆ ===== -->
+      <div class="product-card cong-nghe">
+        <img src="clean code.webp" alt="Clean Code">
+        <h3>Clean Code</h3>
+        <p class="price">150.000₫</p>
+        <button class="btn add-to-cart" data-name="Clean Code" data-price="150000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card cong-nghe">
+        <img src="programming.webp" alt="Programming Principles">
+        <h3>Programming Principles</h3>
+        <p class="price">130.000₫</p>
+        <button class="btn add-to-cart" data-name="Programming Principles" data-price="130000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card cong-nghe">
+        <img src="javascript.webp" alt="JavaScript The Good Parts">
+        <h3>JavaScript The Good Parts</h3>
+        <p class="price">120.000₫</p>
+        <button class="btn add-to-cart" data-name="JavaScript The Good Parts" data-price="120000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card cong-nghe">
+        <img src="python.jpg" alt="Python Crash Course">
+        <h3>Python Crash Course</h3>
+        <p class="price">135.000₫</p>
+        <button class="btn add-to-cart" data-name="Python Crash Course" data-price="135000">Thêm vào giỏ</button>
+      </div>
+
+      <!-- ===== ĐỜI SỐNG ===== -->
+      <div class="product-card doi-song">
+        <img src="sẵn sàng để yêu.jpg" alt="Sẵn sàng để yêu">
+        <h3>Sẵn sàng để yêu</h3>
+        <p class="price">70.000₫</p>
+        <button class="btn add-to-cart" data-name="Sẵn sàng để yêu" data-price="70000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card doi-song">
+        <img src="nghệ thuật sống hạnh phúc.webp" alt="Nghệ Thuật Sống Hạnh Phúc">
+        <h3>Nghệ Thuật Sống Hạnh Phúc</h3>
+        <p class="price">79.000₫</p>
+        <button class="btn add-to-cart" data-name="Nghệ Thuật Sống Hạnh Phúc" data-price="79000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card doi-song">
+        <img src="bình an mà sống.jpg" alt="Bình An Mà Sống">
+        <h3>Bình An Mà Sống</h3>
+        <p class="price">85.000₫</p>
+        <button class="btn add-to-cart" data-name="Bình An Mà Sống" data-price="85000">Thêm vào giỏ</button>
+      </div>
+
+      <div class="product-card doi-song">
+        <img src="hạnh phúc mỗi ngày.jpg" alt="Hạnh Phúc Mỗi Ngày">
+        <h3>Hạnh Phúc Mỗi Ngày</h3>
+        <p class="price">90.000₫</p>
+        <button class="btn add-to-cart" data-name="Hạnh Phúc Mỗi Ngày" data-price="90000">Thêm vào giỏ</button>
+      </div>
+ 
+
+
+     
+
+</body>
+</html>

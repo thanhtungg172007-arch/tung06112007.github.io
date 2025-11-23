@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng - BookZone</title>
+  <link rel="stylesheet" href="giohang.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">📚 BookZone</div>
+    <nav>
+      <a href="bansach.html">Trang chủ</a>
+      <a href="giohang.html" class="active">Giỏ hàng</a>
+    </nav>
+  </header>
+
+  <section class="cart-section">
+    <h2>🛒 Giỏ hàng của bạn</h2>
+
+    <div class="cart-container">
+      <table class="cart-table" id="cartTable">
+        <tr>
+          <th>Sản phẩm</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Tổng</th>
+          <th>Xóa</th>
+        </tr>
+      </table>
+
+      <div class="cart-summary">
+        <p id="totalPrice"><strong>Tổng cộng:</strong> 0₫</p>
+        <!-- ✅ thêm id cho nút -->
+        <button class="btn checkout" id="checkoutBtn">Thanh toán</button>
+
+        
+        <!-- ✅ thêm id và ẩn QR lúc đầu -->
+        <div class="payment-section" id="qrSection" style="display:none;">
+          <h3>Quét mã để thanh toán 💸</h3>
+          <img src="QR.jpg" alt="QR chuyển khoản" class="qr-code">
+          <p><strong>Ngân hàng:</strong> MB Bank</p>
+          <p><strong>Chủ TK:</strong> BÙI THANH TÙNG</p>
+          <p><strong>Số TK:</strong> 5061120078888</p>
+          <button class="btn confirm" id="confirmPayment">Đã chuyển tiền</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer>
+  <p>© 2025 BookZone — Cảm ơn bạn đã mua sắm cùng chúng tôi 💙</p>
+</footer>

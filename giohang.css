@@ -1,0 +1,203 @@
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+}
+
+/* --- Header --- */
+header {
+  background: linear-gradient(90deg, #4e73df, #224abe);
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd166;
+}
+
+/* --- Section --- */
+.cart-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+.cart-section h2 {
+  text-align: center;
+  color: #224abe;
+  margin-bottom: 25px;
+}
+
+/* --- Bảng giỏ hàng --- */
+.cart-container {
+  overflow-x: auto;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.cart-table th {
+  background: #4e73df;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.cart-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table tr:hover td {
+  background: #f1f5ff;
+}
+
+.cart-table .empty {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 30px 0;
+}
+
+/* --- Tổng tiền và nút thanh toán --- */
+.cart-summary {
+  margin-top: 25px;
+  text-align: right;
+}
+
+.cart-summary p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #4e73df;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2e59d9;
+  transform: scale(1.05);
+}
+
+/* Nút xóa */
+.btn.del {
+  background: #e74a3b;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.btn.del:hover {
+  background: #c0392b;
+}
+
+/* --- Footer --- */
+footer {
+  background: #224abe;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-section {
+    padding: 20px;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+}
+
+.payment-section {
+    display: none;
+  text-align: center;
+  margin-top: 25px;
+  border-top: 2px solid #ddd;
+  padding-top: 15px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ✅ TOAST THÔNG BÁO THANH TOÁN THÀNH CÔNG */
+.toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
